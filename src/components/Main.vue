@@ -1,6 +1,6 @@
 <template>
     <div class="main-full">
-     
+        Content goes here
     </div>
 </template>
 
