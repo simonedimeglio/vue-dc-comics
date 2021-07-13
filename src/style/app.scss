@@ -12,3 +12,24 @@
     width: 800px;
     margin: 0 auto;
 } 
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    width: calc(100% / 6);
+}
+  
+  .px-15 {
+    padding: 0 15px;
+}
+  
+  .img-container {
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}

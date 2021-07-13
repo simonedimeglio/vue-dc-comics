@@ -6,16 +6,7 @@
       </div>
       <nav>
         <ul>
-          <li><a href="">CHARACTERS</a></li>
-          <li><a href="">COMICS</a></li>
-          <li><a href="">MOVIES</a></li>
-          <li><a href="">TV</a></li>
-          <li><a href="">GAMES</a></li>
-          <li><a href="">COLLECTIBILES</a></li>
-          <li><a href="">VIDEOS</a></li>
-          <li><a href="">FANS</a></li>
-          <li><a href="">NEWS</a></li>
-          <li><a href="">SHOP</a></li>
+          <li v-for="item in navBar" :key="item.navItem"><a href="">{{item.navItem}}</a></li>
         </ul>
       </nav>
     </div>
@@ -25,6 +16,26 @@
 <script>
 export default {
   name: "Header",
+  props: {
+    navItem: String,
+    id: Number,
+  },
+  data() {
+    return {
+      navBar: [
+        {navItem: "CHARACTERS", id: 0},
+        {navItem: "COMICS", id: 1},
+        {navItem: "MOVIES", id: 2},
+        {navItem: "TV", id: 3},
+        {navItem: "GAMES", id: 4},
+        {navItem: "COLLECTIBILES", id: 5},
+        {navItem: "VIDEOS", id: 6},
+        {navItem: "FANS", id: 7},
+        {navItem: "NEWS", id: 8},
+        {navItem: "SHOP", id: 9},
+      ]
+    }
+  }
 };
 </script>
 
